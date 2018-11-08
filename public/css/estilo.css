@@ -1,0 +1,238 @@
+.cabecalho{
+
+    background-color: #f3e1c1;  
+   
+}
+.logo{
+    position: relative;
+    top: 11px;
+}
+
+    .btnLogar{
+        background-color: #664543;
+        color: white;
+    }
+
+    .btnLogar:hover{
+        background-color: white;
+        color:#664543;
+    }
+
+.btnAreaRest{
+    background-color: transparent;
+    border: none;
+    color: white;
+   
+}
+
+.nav-link{
+    color:#664543;
+}
+.nav-link.active{
+    background-color:#664543!important;
+    color: white!important;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background-color:#664543!important;
+    color: white!important;
+}
+.camposAlinha{
+    margin-top: 40px;
+}
+
+#ProdDestaque{
+    background-image: url("../imagens/Destaque/6033.jpg");
+    height: 713px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 31%;
+}
+
+.listaDestaque{
+    list-style: none;
+   color:#664543;
+   
+}
+.tituloDestaque{
+    font-family: fantasy;
+    margin-top: 20px;
+    
+}
+.textoDestaque{
+    font-family: cursive;
+}
+.espacamentoDestaqueTitulo{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.espacamentoDestaque{
+    margin-bottom: 20px;
+}
+
+.btnSaibaMais{
+    background-color: transparent;
+    border-color:#664543    ;       
+    color: #664543;
+    border-radius: 10px;
+    font: 20px;
+    width: 140px;
+    height: 50px;
+    }
+
+.btnSaibaMais:hover{
+    background-color: #664543;
+    color: white;
+}
+.subTituloDestaque{
+    color: #664543;
+}
+
+
+.rodape{
+    background-color: #f3e1c1;
+}
+
+.endereco{
+    margin-top: 25px;
+    color:#664543;
+    font-family: cursive;
+}
+
+
+.face{
+    color: #664543;
+}
+
+.instagram{
+    color: #664543;
+}
+.email{
+    color:#664543;
+}
+
+.tel{
+    color: #664543; 
+}
+
+.iconFace{
+    color: red;
+}
+
+.iconFace:hover{
+    color:#664543;
+}
+
+.iconInsta{
+    color: red;
+}
+
+.iconInsta:hover{
+    color:#664543;
+}
+.iconEmail{
+    color: red;
+}
+.iconEmail:hover{
+    color:#664543;
+}
+
+.iconTel{
+    color: red;
+}
+
+.iconTel:hover{
+    color:#664543;
+    
+}
+
+.erro{
+    border-color: red!important;
+}
+
+#Cardapios{
+    background-color: #f3e1c1;
+}
+
+.titulosCardapios{
+    color: #664543;
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.textCardapios{
+    color: #664543;
+    font-family: cursive;
+    margin-top: 10px;
+}
+
+.cardapios-imagens{
+    max-width: 100%;
+    height: 380px;
+}
+
+
+.tituloCardapios{
+    color: #664543;
+    font-family: cursive;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+.btnCardapio{
+    margin-top: 10px;
+    background-color: #664543;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    height: 40px;
+}
+
+.btnCardapio:hover{
+    background-color: white;
+    color: #664543;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+
+
+.ulJumbo{
+    list-style: none;
+    
+}
+
+.subtitleValores{
+    margin-bottom: 10px;
+    color: #f3e1c1;
+    font-family: cursive;
+}
+.subTitlesValores{
+    color: #664543;
+    font-family: inherit;
+}
+
+.conteudoValores{
+    color: gray;
+    font-family: fantasy;
+}
+
+.btnValores{
+    background-color: #664543;
+    border:none;
+    border-radius: 10px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.btnValores:hover{
+    background-color: white;
+    color: #664543;
+}

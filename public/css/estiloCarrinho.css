@@ -1,0 +1,122 @@
+body {
+    background-color: #f3e1c1 !important;
+}
+.geral {
+    width: 750px;
+    height: 423px;
+    margin: 80px auto 20px;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloCarrinho {
+    height: 60px;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.item {
+    padding: 20px 30px;
+    height: 120px;
+    display: flex;
+    border-bottom:  1px solid #E1E8EE;
+}
+
+.bt_carrinho {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 10px;
+}
+
+.bt_excluir {
+    display: inline-block;
+    cursor: pointer;
+    width: 18px;
+    height: 17px;
+    background: url("../imagens/delete-icn.svg") no-repeat center;
+    margin-right: 20px;
+}
+
+.img_produto {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.descricao_produto {
+    padding-top: 10px;
+    margin-right: 60px;
+    width: 225px;
+}
+
+.descricao_produto span {
+    display: block;
+    font-size: 14px;
+    color: #43484D;
+    font-weight: 400;
+}
+
+.quantidade {
+    padding-top: 20px;
+    margin-right: 60px;
+}
+.quantidade input {
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+
+.bt_diminui img {
+    margin-bottom: 3px;
+}
+.bt_aumenta img {
+    margin-top: -3px;
+}
+
+.valor_total {
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+
+#bt_finalizar {
+    float: right;
+    margin-right: 180px;
+}
+
+@media (max-width: 800px) {
+    .geral {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .item {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .img_produto img {
+        width: 50%;
+    }
+    .img_produto,
+    .quantidade,
+    .descricao_produto {
+        width: 100%;
+        text-align: center;
+        margin: 6px 0;
+    }
+    .bt_carrinho {
+        margin-right: 20px;
+    }
+}

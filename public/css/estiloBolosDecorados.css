@@ -1,0 +1,133 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/10/2018, 14:40:17
+    Author     : felip
+*/
+
+.estiloListas{
+    list-style: none;
+}
+
+.estiloRows{
+    background-color: #f3e1c1;
+}
+
+.estiloSections{
+    background-color: #f3e1c1;
+    padding-top: 50px;
+    
+}
+
+.estiloTitulos{
+    font-family: cursive;
+    color: #664543;
+    
+}
+
+.estiloParagrafo{
+    font-family: Ink Free;
+    color: #664543;
+    font-size: 20px;
+   
+}
+.estiloLabelValor{
+    font-family:cursive;
+    color:#664543;
+    font-size: 20px;
+    margin-left: 50px;
+    
+}
+
+.estiloLabelQtde{
+ font-family: cursive;
+ color:#664543;
+}
+
+.estiloInputs{
+    border-color: #664543;
+    border-radius: 10px;
+    
+}
+
+.estiloBtns{
+    background-color: #664543;
+    border:none;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 32px;
+}
+
+.estiloBtns:hover{
+    background-color: white;
+    color: #664543;
+}
+
+
+.footer{
+    background-color: #f3e1c1;
+}
+
+.rodape{
+    background-color: #f3e1c1;
+}
+
+.endereco{
+    margin-top: 25px;
+    color:#664543;
+    font-family: cursive;
+}
+
+
+.face{
+    color: #664543;
+}
+
+.instagram{
+    color: #664543;
+}
+.email{
+    color:#664543;
+}
+
+.tel{
+    color: #664543; 
+}
+
+.iconFace{
+    color: red;
+}
+
+.iconFace:hover{
+    color:#664543;
+}
+
+.iconInsta{
+    color: red;
+}
+
+.iconInsta:hover{
+    color:#664543;
+}
+.iconEmail{
+    color: red;
+}
+.iconEmail:hover{
+    color:#664543;
+}
+
+.iconTel{
+    color: red;
+}
+
+.iconTel:hover{
+    color:#664543;
+    
+}
