@@ -25,7 +25,7 @@
                             <input id="qtdeProds1" class="estiloInputs" type="number">
                         </li>
                         <li>
-                            <button id="enviarCarrinho1" class="btn estiloBtns">Adicionar ao Carrinho</button>
+                            <a href="{{route('cart.add',$produto->id)}}" id="enviarCarrinho1" class="btn estiloBtns">Adicionar ao Carrinho</a>
                         </li>
                     </ul>
                 </div>

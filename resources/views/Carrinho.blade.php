@@ -5,33 +5,35 @@
             <div class="tituloCarrinho">
                 Carrinho
             </div>
+            @foreach($cart->getCardItem() as $item)
+                <div class="item">
+                    <div class="bt_carrinho">
+                        <a href="{{route('cart.remove', $item->getId() )}}"><span class="bt_excluir"></span></a>
+                    </div>
 
-            <div class="item">
-                <div class="bt_carrinho">
-                    <span class="bt_excluir"></span>
+                    <div class="img_produto">
+                        <img src="imagens/Bolos Simples/Bolo1.jpg" alt="" width="100%"/>
+                    </div>
+
+                    <div class="descricao_produto">
+                        <span><strong>{{$item->getNome()}}</strong></span>
+                    </div>
+
+                    <div class="quantidade">
+                        <button class="bt_aumenta" type="button" name="button">
+                            <img src="imagens/plus.svg" alt="" />
+                        </button>
+                        <input type="text" name="name" value="1">
+                        <button class="bt_diminui" type="button" name="button">
+                            <img src="imagens/minus.svg" alt="" />
+                        </button>
+                    </div>
+
+                    <div class="valor_total">{{$item->getPreco()}}</div>
                 </div>
+            @endforeach
 
-                <div class="img_produto">
-                    <img src="imagens/Bolos Simples/Bolo1.jpg" alt="" width="100%"/>
-                </div>
 
-                <div class="descricao_produto">
-                    <span><strong>Bolo Pandeló Duo</strong></span>
-                    <span>Bolo de massa pão-de-ló sabor creme e chocolate</span>
-                </div>
-
-                <div class="quantidade">
-                    <button class="bt_aumenta" type="button" name="button">
-                        <img src="imagens/plus.svg" alt="" />
-                    </button>
-                    <input type="text" name="name" value="1">
-                    <button class="bt_diminui" type="button" name="button">
-                        <img src="imagens/minus.svg" alt="" />
-                    </button>
-                </div>
-
-                <div class="valor_total">$549</div>
-            </div>
         </div>
         
         <div class="container">

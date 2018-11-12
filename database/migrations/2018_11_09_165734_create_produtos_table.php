@@ -19,6 +19,7 @@ class CreateProdutosTable extends Migration
             $table->string('descricao');
             $table->double('preco',10,2);
             $table->integer('quantidade');
+            $table->string('imagem');
             $table->enum('categoria',['Bolos Simples', 'Bolos Decorados','Doces Simples','Doces Gourmet','Salgados','Kits Festa']);
             $table->timestamps();
         });

@@ -34,3 +34,8 @@ Route::get('/listar/{categoria}','BolosSimplesController@show')->name('listar');
 //Route::get('/produtos', 'ProdutosController@index')->name('produtos');
 
 Route::resource('produto','ProdutosController');
+
+/*cart*/
+Route::get('/cart/add/{id}','CartController@addItem')->name('cart.add');
+Route::get('/cart/show','CartController@show')->name('cart.show');
+Route::get('/cart/remove/{cartItem}','CartController@removeitem')->name('cart.remove');

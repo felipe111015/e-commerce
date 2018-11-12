@@ -36,7 +36,7 @@
                                 <a class="nav-link" href="#valores">Quem Somos nós</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('carrinho')}}">Carrinho</a>
+                                <a class="nav-link" href="{{ route('cart.show')}}">Carrinho</a>
                             </li>
                         </ul>
                     </div>
