@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\model\Produto;
 
 class KitsFestaController extends Controller
 {
@@ -13,7 +14,8 @@ class KitsFestaController extends Controller
      */
     public function index()
     {
-        return view('KitsFesta');
+        $produtos = Produto::all()->where('categoria', 'Kits Festa');
+        return view("produtos-list", compact('produtos'));
     }
 
     /**

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\model\Produto;
 
 class BolosDecorados extends Controller
 {
@@ -12,8 +13,9 @@ class BolosDecorados extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('BolosDecorados');
+    {    
+        $produtos = Produto::all()->where('categoria', 'Bolos Decorados');
+        return view("produtos-list", compact('produtos'));
     }
 
     /**

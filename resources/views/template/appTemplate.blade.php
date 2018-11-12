@@ -7,11 +7,6 @@
         <link rel="stylesheet" type="text/css" href="{{ url('css/estilo.css') }}"/>
         <link rel="stylesheet" type="text/css" href="{{ url('css/estiloCarrinho.css') }}"/>
         <link rel="stylesheet" type="text/css" href="{{ url('css/estiloBolosDecorados.css') }}"/>
-        <link rel="stylesheet" type="text/css" href="{{ url('css/estiloBolosSimples.css') }}"/>
-        <link rel="stylesheet" type="text/css" href="{{ url('css/estiloDocesGourmet.css') }}"/>
-        <link rel="stylesheet" type="text/css" href="{{ url('css/estiloDocesSimples.css') }}"/>
-        <link rel="stylesheet" type="text/css" href="{{ url('css/estiloSalgados.css') }}"/>
-        <link rel="stylesheet" type="text/css" href="{{ url('css/estiloKitsFestas.css') }}"/>
         
         
         <link rel="stylesheet" type="text/css" href="{{ url('css/animate/animate.css') }} "/>

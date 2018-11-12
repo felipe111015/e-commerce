@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\model\Produto;
 
 class DocesGourmetController extends Controller
 {
@@ -13,7 +14,8 @@ class DocesGourmetController extends Controller
      */
     public function index()
     {
-        return view('docesGourmet');
+        $produtos = Produto::all()->where('categoria', 'Doces Gourmet');
+        return view("produtos-list", compact('produtos'));
     }
 
     /**

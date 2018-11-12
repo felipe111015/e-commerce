@@ -31,4 +31,6 @@ Route::get('/teste','TesteController@index')->name('teste');
 
 Route::get('/listar/{categoria}','BolosSimplesController@show')->name('listar');
 
-Route::get('/produtos', 'ProdutosController@index')->name('produtos');
+//Route::get('/produtos', 'ProdutosController@index')->name('produtos');
+
+Route::resource('produto','ProdutosController');

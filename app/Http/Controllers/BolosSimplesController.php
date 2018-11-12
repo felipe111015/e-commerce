@@ -14,7 +14,8 @@ class BolosSimplesController extends Controller
      */
     public function index()
     {
-     return view("bolosSimples");
+     $produtos = Produto::all()->where('categoria', 'Bolos Simples');
+     return view("produtos-list", compact('produtos'));
     }
 
     /**
@@ -44,10 +45,9 @@ class BolosSimplesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($categoria)
+    public function show($id)
     {
-        $produtos = Produto::all()->where('categoria', $categoria);
-        return view('produtos-list', compact('produtos', $produtos));
+        
     }
 
     /**

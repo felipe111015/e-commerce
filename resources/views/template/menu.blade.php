@@ -20,10 +20,11 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('index')}}">Home</a>
                             </li>
+                            @php($categoria = 'Bolos Simples')
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Produtos</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="{{ route('produtos')}}">Bolos Simples</a>
+                                    <a class="dropdown-item" href="{{ route('bolosSimples')}}">Bolos Simples</a>
                                     <a class="dropdown-item" href="{{ route('bolosDecorados') }}">Bolos Decorados</a>
                                     <a class="dropdown-item" href="{{ route('docesSimples') }}">Doces Simples</a>
                                     <a class="dropdown-item" href="{{ route('docesGourmet') }}">Doces Gourmet</a>
