@@ -27,7 +27,8 @@ Route::get('/KitsFesta','KitsFestaController@index')->name('kits');
 
 Route::get('/Carrinho','CarrinhoController@index')->name('carrinho');
 
+Route::get('/teste','TesteController@index')->name('teste');
 
-Auth::routes();
+Route::get('/listar/{categoria}','BolosSimplesController@show')->name('listar');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/produtos', 'ProdutosController@index')->name('produtos');

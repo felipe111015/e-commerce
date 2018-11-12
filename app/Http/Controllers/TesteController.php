@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\model\Produto;
 
-class BolosSimplesController extends Controller
+class TesteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,13 @@ class BolosSimplesController extends Controller
      */
     public function index()
     {
-     return view("bolosSimples");
+        $produtos = Produto::all()->where('categoria','Bolos Simples');
+        return view('produtos-list',compact('produtos'));
+    }
+
+    public function list($categoria){
+        $produtos = Produto::all()->where('categoria', $categoria);
+        return view('produtos-list', compact('produtos'));
     }
 
     /**
@@ -44,10 +50,9 @@ class BolosSimplesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($categoria)
+    public function show($id)
     {
-        $produtos = Produto::all()->where('categoria', $categoria);
-        return view('produtos-list', compact('produtos', $produtos));
+        //
     }
 
     /**
